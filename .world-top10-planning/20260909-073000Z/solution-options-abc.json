@@ -1,0 +1,9 @@
+{
+  "schema_version":"solution-options-abc.v1","run_id":"20260909-054409Z","generated_at_utc":"2026-09-09T05:44:09Z","project_fingerprint":"hotelscanner.scanners.cc|h1-h2-h3-internal-oauth-d1-wesaver-cloudflare-only-v3","artifact_type":"solution-options-abc","source_artifact_ids":["gap-register.json","best-practice-synthesis.json"],
+  "records":[
+    {"id":"OPT-A","name":"제휴 메타서치 우선","scope":"공급자 1~2곳+클릭아웃+총액 원장","time":"4~8주 외부 승인 포함","cost":"계약·쿼터에 따라 변동","risk":"공급자 편중","recommendation":"채택"},
+    {"id":"OPT-B","name":"직접 예약 OTA","scope":"재고·예약·결제까지 직접 운영","time":"6~12개월","cost":"높음","risk":"PCI·취소·CS·환불 책임","recommendation":"보류"},
+    {"id":"OPT-C","name":"표본·콘텐츠 차별화","scope":"실시간 전까지 가이드·계산기·투명성 강화","time":"1~3주","cost":"낮음","risk":"최저가 서비스로 오인 가능","recommendation":"병행하되 SAMPLE_ONLY 유지"}
+  ],
+  "counts":{"options":3},"unknowns":["공급자 수수료율","직접 예약 법률·운영 비용"]
+}

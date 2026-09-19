@@ -1,0 +1,13 @@
+{
+  "schema":"crh-analysis-result/v1",
+  "engineVersion":"1.0.1",
+  "status":"BLOCKED_EXTERNAL",
+  "project":"HotelScanner",
+  "score":null,
+  "composite":{"axesUsed":0,"status":"NOT_COMPUTED"},
+  "reason":"허용된 engine SHA-256과 저장된 readiness-engine.mjs/example 입력의 SHA-256이 일치하지 않아 명세에 따라 엔진을 실행하지 않음",
+  "fingerprints":{"engine_actual":"a6a5da2d9e7c5e2fb01294e61e1114f803580df3452ba3e2a12caa9223348bd0","engine_allowed":"9dd4b165ff3993868b59c9025883f71726fa3b39184ca1b01c2e8549169cdf33","lens_actual":"ba293f43a4e12c4f0eb58f654cfb9fa57a586a629b1fb51233a2a5b58d46c094","lens_allowed":"ba293f43a4e12c4f0eb58f654cfb9fa57a586a629b1fb51233a2a5b58d46c094","example_actual":"683710d33eb70add151f0003d2dc85b653621babe56d3e8489f5f92b4e918c8c","example_allowed":"f59c9aafa4ed0d7ac1e15eb4bc673b47fdde43d4e7d5c9b60d75d354fdf42db6"},
+  "unknowns":["Readiness 점수·등급·증거 진행률·필수 조건","엔진과 입력의 허용 지문 복구 여부"],
+  "na":["엔진 계산 결과 전부"],
+  "counts":{"items":null,"gates":null}
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version":"benchmark-taxonomy.v1",
+  "run_id":"20260909-054409Z",
+  "generated_at_utc":"2026-09-09T05:44:09Z",
+  "project_fingerprint":"hotelscanner.scanners.cc|h1-h2-h3-internal-oauth-d1-wesaver-cloudflare-only-v3",
+  "artifact_type":"benchmark-taxonomy",
+  "source_artifact_ids":["service-baseline.json","pasted-master-prompt"],
+  "scale":{"0":"없음 또는 차단","1":"초기/제한적","2":"기본 정상","3":"중급","4":"고급","5":"세계 선도 공개 증거"},
+  "fields":[
+    {"id":"FIELD-01","name":"핵심 숙소 검색"},{"id":"FIELD-02","name":"목적지·날짜·인원 입력"},{"id":"FIELD-03","name":"숙소·객실 범위"},{"id":"FIELD-04","name":"판매처·요금 범위"},{"id":"FIELD-05","name":"총액·세금 정확성"},{"id":"FIELD-06","name":"필터 깊이"},{"id":"FIELD-07","name":"정렬·추천"},{"id":"FIELD-08","name":"지도·위치"},{"id":"FIELD-09","name":"리뷰·신뢰"},{"id":"FIELD-10","name":"환불·결제 조건"},{"id":"FIELD-11","name":"개인화·회원혜택"},{"id":"FIELD-12","name":"유연한 날짜·대안"},{"id":"FIELD-13","name":"가격 알림"},{"id":"FIELD-14","name":"여행 콘텐츠·가이드"},{"id":"FIELD-15","name":"예약 클릭아웃·전환"},{"id":"FIELD-16","name":"모바일 경험"},{"id":"FIELD-17","name":"PC 경험"},{"id":"FIELD-18","name":"접근성·명확한 상태"},{"id":"FIELD-19","name":"언어·통화·지역화"},{"id":"FIELD-20","name":"계정·기록·공유"},{"id":"FIELD-21","name":"API·연결성"},{"id":"FIELD-22","name":"제휴·수익화"},{"id":"FIELD-23","name":"고객지원·복구"},{"id":"FIELD-24","name":"보안·개인정보"}
+  ],
+  "weight_policy":"기본 사용자 결정 과업 60%, 신뢰·전환 25%, 운영·확장 15%; 현재 계획 단계에서는 모든 필드를 동일 가중치로 먼저 비교하고 최종 제품 가중치는 검증 실험 후 고정",
+  "records":{"field_count":24},
+  "counts":{"field_count":24},
+  "unknowns":["최종 제품별 가중치는 실험 후 고정"]
+}

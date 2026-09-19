@@ -1,0 +1,7 @@
+{
+  "schema_version":"run-manifest.v1","run_id":"20260909-073000Z","generated_at_utc":"2026-09-09T07:30:00Z","project_fingerprint":"hotelscanner.scanners.cc|h1-h2-h3-internal-oauth-d1-wesaver-cloudflare-only-v3","artifact_type":"run-manifest","source_artifact_ids":["v3.2-pasted-master","STATE.md","TEST_EVIDENCE.md"],
+  "records":{"mode":"END_TO_END","engine_b":"COMPLETE_INTERNAL_WITH_X10_SHORTFALL","engine_c":"BLOCKED_EXTERNAL_SHA_MISMATCH","x10":"X10_PARTIAL_SCOPE","product_write_boundary":"NO_PRODUCT_CODE_CONFIG_OPS_GIT_PUBLIC_DEPLOYMENT_WRITES","primary_catalog":{"number":124,"name":"호텔 예약"},"supplemental_catalogs":[123,126],"public_url":"https://hotelscanner.scanners.cc/","dashboard_url":"https://hotelscanner.scanners.cc/dashboard/","qr_path":"D:/Desktop/챗지피티프로젝트들/에어스캐너/60_OUTPUTS/HOTELSCANNER_PUBLIC_QR.svg","base_artifacts_reused_from":"20260909-054409Z","artifact_count":75},
+  "counts":{"required_artifacts":75,"created_artifacts":79,"readiness_score_computed":0},
+  "unknowns":["실시간 공급자 계약·API 키","제휴 정산","광고·법률 최종 승인","유휴 Android 실기기 결과","Readiness 엔진 허용 SHA 불일치 해소"],
+  "warnings":["현재 공개판은 SAMPLE_ONLY이며 실시간 최저가/예약 서비스가 아니다","Readiness 점수는 산출하지 않았다","B드라이브·Apple 로그인·결제는 범위에서 제외"]
+}

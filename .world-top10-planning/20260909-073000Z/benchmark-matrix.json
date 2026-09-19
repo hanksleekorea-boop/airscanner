@@ -1,0 +1,26 @@
+{
+  "schema_version":"benchmark-matrix.v1",
+  "run_id":"20260909-054409Z",
+  "generated_at_utc":"2026-09-09T05:44:09Z",
+  "project_fingerprint":"hotelscanner.scanners.cc|h1-h2-h3-internal-oauth-d1-wesaver-cloudflare-only-v3",
+  "artifact_type":"benchmark-matrix",
+  "source_artifact_ids":["benchmark-taxonomy.json","top10-lock.json"],
+  "scale":"0-5; UNKNOWN은 점수에 넣지 않고 별도 기록",
+  "rows":[
+    {"id":"OURS","name":"HotelScanner","scores":[2,3,1,0,2,3,3,0,2,2,1,1,0,1,0,4,4,3,3,2,1,0,2,4],"evidence":["OWN-0001","OWN-0002","OWN-0003","OWN-0004"]},
+    {"id":"SVC-01","name":"Google Hotels","scores":[5,5,5,5,5,5,5,5,4,5,4,4,4,4,4,5,5,5,5,4,4,4,4,5],"evidence":["SRC-0001"]},
+    {"id":"SVC-02","name":"KAYAK Hotels","scores":[5,5,5,5,5,5,5,5,4,4,4,4,4,3,4,5,5,4,5,4,4,4,4,5],"evidence":["SRC-0002"]},
+    {"id":"SVC-03","name":"trivago","scores":[4,4,5,5,5,4,4,4,4,4,3,3,4,3,4,5,5,4,5,3,3,4,3,4],"evidence":["SRC-0003"]},
+    {"id":"SVC-04","name":"HotelsCombined","scores":[4,4,5,5,5,4,4,4,4,4,3,3,4,3,4,4,5,4,5,3,3,4,3,4],"evidence":["SRC-0004","SRC-0005"]},
+    {"id":"SVC-05","name":"Skyscanner Hotels","scores":[4,4,5,4,4,4,4,4,3,3,3,4,3,4,4,5,5,4,5,3,3,4,3,4],"evidence":["SRC-0006"]},
+    {"id":"SVC-06","name":"Tripadvisor Hotels","scores":[4,4,5,4,4,4,4,5,5,4,4,3,3,5,4,4,5,4,5,3,3,3,4,4],"evidence":["SRC-0007"]},
+    {"id":"SVC-07","name":"Wego Hotels","scores":[4,4,5,4,4,4,4,4,4,4,3,3,3,3,4,4,5,4,5,3,3,4,4,4],"evidence":["SRC-0008"]},
+    {"id":"SVC-08","name":"Booking.com","scores":[5,5,5,5,5,5,5,4,5,5,5,4,4,5,5,5,5,5,5,5,4,5,5,4],"evidence":["SRC-0009"]},
+    {"id":"SVC-09","name":"Agoda","scores":[5,5,5,5,5,5,5,4,4,5,5,4,4,4,5,5,5,4,5,5,4,5,5,4],"evidence":["SRC-0010"]},
+    {"id":"SVC-10","name":"Expedia","scores":[5,5,5,5,5,5,5,4,4,5,5,4,4,4,5,5,5,4,5,5,4,5,5,4],"evidence":["SRC-0011"]}
+  ],
+  "unknown_policy":"HotelScanner live provider, price alerts, map, clickout, API and revenue are not treated as zero because no live provider evidence exists; visible current state is scored as limited only where directly observed.",
+  "records":{"row_count":11,"field_count":24},
+  "counts":{"row_count":11,"field_count":24},
+  "unknowns":["비공개 알고리즘·시장점유율·실제 전환율"]
+}

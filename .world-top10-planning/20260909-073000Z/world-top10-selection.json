@@ -1,0 +1,27 @@
+{
+  "schema_version":"world-top10-selection.v1",
+  "run_id":"20260909-054409Z",
+  "generated_at_utc":"2026-09-09T05:44:09Z",
+  "project_fingerprint":"hotelscanner.scanners.cc|h1-h2-h3-internal-oauth-d1-wesaver-cloudflare-only-v3",
+  "source_artifact_ids":["candidate-register.json","source-register.md"],
+  "artifact_type":"world-top10-selection",
+  "selection_scope":"내장 500개 카탈로그 124번 호텔 예약 중심; 123·126 보조",
+  "selection_rule":"구조적 유사도 60%, 공개 근거 품질 20%, 활동성 10%, 플랫폼·시장 적합성 10%",
+  "records":[
+    {"rank":1,"id":"SVC-01","name":"Google Hotels","catalog_numbers":[124,126],"similarity":96,"evidence":["SRC-0001"]},
+    {"rank":2,"id":"SVC-02","name":"KAYAK Hotels","catalog_numbers":[124,126],"similarity":94,"evidence":["SRC-0002"]},
+    {"rank":3,"id":"SVC-03","name":"trivago","catalog_numbers":[124],"similarity":93,"evidence":["SRC-0003"]},
+    {"rank":4,"id":"SVC-04","name":"HotelsCombined","catalog_numbers":[124,126],"similarity":92,"evidence":["SRC-0004","SRC-0005"]},
+    {"rank":5,"id":"SVC-05","name":"Skyscanner Hotels","catalog_numbers":[124,126],"similarity":91,"evidence":["SRC-0006"]},
+    {"rank":6,"id":"SVC-06","name":"Tripadvisor Hotels","catalog_numbers":[124,126],"similarity":89,"evidence":["SRC-0007"]},
+    {"rank":7,"id":"SVC-07","name":"Wego Hotels","catalog_numbers":[124,126],"similarity":88,"evidence":["SRC-0008"]},
+    {"rank":8,"id":"SVC-08","name":"Booking.com","catalog_numbers":[124,123],"similarity":86,"evidence":["SRC-0009"]},
+    {"rank":9,"id":"SVC-09","name":"Agoda","catalog_numbers":[124,123],"similarity":84,"evidence":["SRC-0010"]},
+    {"rank":10,"id":"SVC-10","name":"Expedia","catalog_numbers":[124,123],"similarity":83,"evidence":["SRC-0011"]}
+  ],
+  "counts":{"selected":10,"reserve":1},
+  "unknowns":["동일 시점 시장점유율·전환율"],
+  "reserve_candidate":{"name":"Trip.com","similarity":82,"reason":"공식 1.7M+ 호텔·230+ 국가 근거는 있으나 이번 고정군에서는 metasearch 직접 유사도 순위 10개에 밀림","evidence":["SRC-0012"]},
+  "status":"TOP10_LOCKED_WITH_SCOPE_LIMIT",
+  "warnings":["세계 전체 시장점유율 순위가 아니라 내장 범주·공개 근거·구조적 유사도에 따른 이번 실행의 고정 비교군"]
+}

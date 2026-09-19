@@ -1,0 +1,14 @@
+{
+  "schema_version":"edge-case-10000-plan.v1","run_id":"20260909-073000Z","generated_at_utc":"2026-09-09T07:30:00Z","project_fingerprint":"hotelscanner.scanners.cc|h1-h2-h3-internal-oauth-d1-wesaver-cloudflare-only-v3","artifact_type":"edge-case-10000-plan","source_artifact_ids":["x10-workload-baseline.json","screen-and-state-spec.md"],
+  "records":[
+    {"axis":"input","values":["empty","unicode","long","past_date","date_reversed","zero_guests","large_guests"],"weight":0.2},
+    {"axis":"provider","values":["ok","timeout","429","5xx","invalid_json","stale","partial"],"weight":0.2},
+    {"axis":"account","values":["anonymous","valid_session","expired","wrong_origin","delete_pending"],"weight":0.15},
+    {"axis":"network","values":["fast","slow","offline","flaky","duplicate_request"],"weight":0.15},
+    {"axis":"platform","values":["mobile","pc","keyboard","screen_reader","small_viewport"],"weight":0.15},
+    {"axis":"business","values":["no_affiliate","allowed_affiliate","cookie_denied","ad_disabled","policy_unknown"],"weight":0.15}
+  ],
+  "generation_rule":"고정 seed=hotel-x10-20260909; 축 조합을 사전식으로 만들고 requestId는 case-00001..10000",
+  "expected_distribution":{"cases":10000,"axes":6,"unique_min":10000,"expected_statuses":["READY","PARTIAL","EMPTY","ERROR","BLOCKED"]},
+  "counts":{"planned":10000,"generated":34},"unknowns":["9,966개 미생성·미실행 사례","실제 분포의 대표성"]
+}

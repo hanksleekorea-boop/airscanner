@@ -1,0 +1,31 @@
+{
+  "schema_version": "service-baseline.v1",
+  "run_id": "20260909-054409Z",
+  "generated_at_utc": "2026-09-09T05:44:09Z",
+  "project_fingerprint": "hotelscanner.scanners.cc|h1-h2-h3-internal-oauth-d1-wesaver-cloudflare-only-v3",
+  "artifact_type": "service-baseline",
+  "source_artifact_ids": ["OWN-0001", "OWN-0002", "OWN-0003", "OWN-0004"],
+  "service": {
+    "name": "HotelScanner",
+    "one_sentence": "숙박 조건과 표본 총액을 한 화면에서 비교하게 하는 무료 설치형 웹앱(PWA).",
+    "primary_catalog_domain": {"number": 124, "name": "호텔 예약", "confidence": "high"},
+    "secondary_catalog_domains": [{"number": 123, "name": "단기 숙박", "confidence": "medium"}, {"number": 126, "name": "여행 일정", "confidence": "medium"}],
+    "core_user": "가격·환불·조식·결제시점을 함께 비교하려는 초기 여행자",
+    "buyer": "현재는 무료 사용자; 향후 제휴 클릭·광고주·공급자",
+    "platforms": {"web": true, "responsive_mobile_web": true, "pwa": true, "native_android": false, "native_ios": false},
+    "monetization": {"current": "none", "planned": ["제휴 클릭", "광고"], "booking_or_payment": false},
+    "stage": "무료 표본 공개판; 외부 공급자 대기"
+  },
+  "core_tasks": [
+    {"id":"OWN-TASK-01","task":"목적지·날짜·인원 입력"},
+    {"id":"OWN-TASK-02","task":"조건 검증 후 표본 검색"},
+    {"id":"OWN-TASK-03","task":"총액·환불·조식·목적 필터 비교"},
+    {"id":"OWN-TASK-04","task":"비교함과 로컬 결정 기록 저장"},
+    {"id":"OWN-TASK-05","task":"Google 로그인 후 사용 데이터 저장·내보내기·삭제"},
+    {"id":"OWN-TASK-06","task":"PWA 설치 및 오프라인 셸 확인"}
+  ],
+  "current_state": {"cloudflare_oauth_scope": "READY_100_PERCENT", "live_provider_scope": "WAITING_EXTERNAL", "readiness_engine": "BLOCKED_EXTERNAL"},
+  "records":{"core_tasks":6,"platforms":5,"external_gates":5},
+  "counts":{"core_task_count":6},
+  "unknowns": ["실제 검색 공급자 범위", "실제 가격 정확도", "실사용자 지표", "법률·광고 승인", "Android 실기기 결과"]
+}

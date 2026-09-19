@@ -1,0 +1,16 @@
+{
+  "schema_version":"existing-plan-integration.v1","run_id":"20260909-073000Z","generated_at_utc":"2026-09-09T07:30:00Z","project_fingerprint":"hotelscanner.scanners.cc|h1-h2-h3-internal-oauth-d1-wesaver-cloudflare-only-v3","artifact_type":"existing-plan-integration","source_artifact_ids":["existing-plan-inventory.md","10_STATE/HOTELSCANNER_PRODUCT_DEVELOPMENT_HISTORY_MASTER_v1.md"],
+  "records":[
+    {"id":"PLAN-001","status":"CANONICAL","atoms_found":{"goals":4,"decisions":20,"requirements":8,"tasks":9,"tests":8},"integration":"integrated-product-plan.md"},
+    {"id":"PLAN-002","status":"APPROVED","atoms_found":{"goals":3,"decisions":8,"requirements":5,"tasks":5,"tests":4},"integration":"requirements-register.json"},
+    {"id":"PLAN-003","status":"ACTIVE","atoms_found":{"goals":5,"decisions":10,"requirements":8,"tasks":9,"tests":20},"integration":"integrated-development-plan-5-stages.md"},
+    {"id":"PLAN-004","status":"HISTORICAL","atoms_found":{"ideas":0,"unknown":"카탈로그 원문 세부 집계는 별도 보존"},"integration":"보존만 함"},
+    {"id":"PLAN-005","status":"ACTIVE","atoms_found":{"architecture":6,"dependencies":6},"integration":"dependency-map.json"},
+    {"id":"PLAN-006","status":"ACTIVE","atoms_found":{"data_migrations":4,"rollback_rules":3},"integration":"human-action-packet.md"},
+    {"id":"PLAN-007","status":"IMPLEMENTED_CONFIRMED","atoms_found":{"tests":25,"edge":8},"integration":"service-baseline.json"},
+    {"id":"PLAN-008","status":"IMPLEMENTED_CONFIRMED","atoms_found":{"phases":3,"internal_gates":30},"integration":"one-shot-completeness-matrix.md"},
+    {"id":"PLAN-009","status":"CANONICAL_POINTER","atoms_found":{"next_actions":1,"unknowns":7},"integration":"00-integrated-run-control.json"},
+    {"id":"PLAN-010","status":"CANONICAL_HISTORY","atoms_found":{"events":"다수","latest":"2026-09-09"},"integration":"plan-conflict-register.md"}
+  ],
+  "counts":{"documents":10,"atom_status_assigned":10,"atom_status_target":10},"unknowns":["문서의 모든 문장 단위 원자 분해","AirScanner 과거 문서 세부 항목"]
+}

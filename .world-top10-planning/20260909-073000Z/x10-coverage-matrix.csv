@@ -1,0 +1,11 @@
+dimension,baseline,target,actual,status,evidence_or_reason
+world_candidates,80,800,12,SHORTFALL,candidate-register.json
+common_atomic_metrics,160,1600,24,SHORTFALL,benchmark-taxonomy.json
+core_atomic_metrics,10,100,24,PARTIAL,applicable evidence only
+specialist_perspectives,5,50,10,PARTIAL,scope-limited
+user_task_variants,5,50,18,PARTIAL,journey-head-to-head.md
+decision_cells,40,400,40,SHORTFALL,decision-cell-register.json
+task_card_fields,32,64,32,SHORTFALL,task-readiness-register.json
+edge_cases,1000,10000,100,SHORTFALL,edge-case-10000-plan.json
+negative_samples,10,100,0,NOT_RUN,negative-sample-100-report.md
+search_saturation_repetitions,2,20,2,SHORTFALL,benchmark-saturation-log.md

@@ -1,0 +1,12 @@
+{
+  "schema_version":"dependency-map.v1","run_id":"20260909-054409Z","generated_at_utc":"2026-09-09T05:44:09Z","project_fingerprint":"hotelscanner.scanners.cc|h1-h2-h3-internal-oauth-d1-wesaver-cloudflare-only-v3","artifact_type":"dependency-map","source_artifact_ids":["gap-register.json","five-stage-detailed-development-plan.md"],
+  "records":[
+    {"id":"DEP-01","from":"공급자 계약","to":["API 키","쿼터","가격 정확성","클릭아웃"],"gate":"external","owner":"사업"},
+    {"id":"DEP-02","from":"API 키","to":["HotelOfferV1","총액 원장","실시간 검색"],"gate":"engineering","owner":"백엔드"},
+    {"id":"DEP-03","from":"총액 원장","to":["정렬","최저가 설명","신뢰 배지"],"gate":"engineering","owner":"데이터"},
+    {"id":"DEP-04","from":"제휴 승인","to":["deep link","subId","정산"],"gate":"external","owner":"사업/재무"},
+    {"id":"DEP-05","from":"개인정보·쿠키 검토","to":["알림","클릭아웃 추적","광고"],"gate":"legal","owner":"법무"},
+    {"id":"DEP-06","from":"운영 책임자","to":["SLO","온콜","장애 배너","재처리"],"gate":"organizational","owner":"운영"}
+  ],
+  "counts":{"edges":6},"unknowns":["실제 공급자 SLA","법률 검토 기간","운영 온콜 담당자"]
+}

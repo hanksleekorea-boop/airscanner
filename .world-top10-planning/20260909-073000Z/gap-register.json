@@ -1,0 +1,21 @@
+{
+  "schema_version":"gap-register.v1","run_id":"20260909-054409Z","generated_at_utc":"2026-09-09T05:44:09Z","project_fingerprint":"hotelscanner.scanners.cc|h1-h2-h3-internal-oauth-d1-wesaver-cloudflare-only-v3","artifact_type":"gap-register","source_artifact_ids":["benchmark-statistics.json","service-baseline.json","evidence-index.md"],
+  "records":[
+    {"id":"GAP-001","field":"FIELD-04","title":"실시간 공급자·요금 통합","severity":"P0","current":"SAMPLE_ONLY; providerCount=0","target":"계약된 공급자 2곳 이상, 응답시각·판매처·세금 포함 여부 표시","root_cause":"외부 계약·키·쿼터 부재","owner":"공급자/백엔드","depends_on":["GAP-009"]},
+    {"id":"GAP-002","field":"FIELD-15","title":"예약 클릭아웃","severity":"P0","current":"외부 링크·전환 이벤트 없음","target":"파트너 deep link, 실패 복귀, 전환 추적과 고지","root_cause":"제휴 승인·링크 규격 미확정","owner":"제휴/프론트","depends_on":["GAP-001","GAP-010"]},
+    {"id":"GAP-003","field":"FIELD-08","title":"지도·거리","severity":"P1","current":"지도 기능 없음","target":"지도/거리 필터 또는 지도 없이도 동등한 지역 설명","root_cause":"지도 공급자 라이선스·비용 미결정","owner":"제품/법무","depends_on":["GAP-011"]},
+    {"id":"GAP-004","field":"FIELD-22","title":"제휴 수익화","severity":"P0","current":"수익 이벤트 0","target":"제휴 ID·subId·정산·취소 이벤트를 검증","root_cause":"파트너 계약·정산 계정 미개통","owner":"사업/재무","depends_on":["GAP-002"]},
+    {"id":"GAP-005","field":"FIELD-13","title":"가격 알림","severity":"P1","current":"알림 스케줄 없음","target":"동의 기반 임계값 알림, 철회·실패·만료 처리","root_cause":"실시간 가격과 알림 채널 부재","owner":"백엔드/운영","depends_on":["GAP-001","GAP-012"]},
+    {"id":"GAP-006","field":"FIELD-03","title":"재고·객실 범위","severity":"P0","current":"표본 카탈로그","target":"공급자 정규화 카탈로그와 객실 중복 제거","root_cause":"공급자 데이터 계약 없음","owner":"데이터","depends_on":["GAP-001"]},
+    {"id":"GAP-007","field":"FIELD-05","title":"총액·세금 신뢰","severity":"P0","current":"표본 원장만 검증","target":"요금·세금·수수료·환율 원장과 가격 시각","root_cause":"실판매 응답·통화 정책 미개통","owner":"백엔드/법무","depends_on":["GAP-001","GAP-011"]},
+    {"id":"GAP-008","field":"FIELD-09","title":"리뷰·신뢰 증거","severity":"P1","current":"기본 설명","target":"출처·수집시각·리뷰 수·불일치 신고","root_cause":"리뷰 공급자 및 운영 정책 부재","owner":"콘텐츠/운영","depends_on":["GAP-001"]},
+    {"id":"GAP-009","field":"FIELD-21","title":"공급자 API 어댑터 계약","severity":"P0","current":"내부 API 경계만 존재","target":"timeout/retry/circuit-breaker와 공통 HotelOfferV1","root_cause":"외부 키와 계약 조건 부재","owner":"백엔드","depends_on":[]},
+    {"id":"GAP-010","field":"FIELD-24","title":"제휴·개인정보 추적 고지","severity":"P1","current":"기본 정책 페이지","target":"클릭아웃·쿠키·동의·삭제·수익 고지","root_cause":"파트너별 정책 미검토","owner":"법무/보안","depends_on":["GAP-004"]},
+    {"id":"GAP-011","field":"FIELD-19","title":"다국어·통화·세금 지역화","severity":"P1","current":"한국어·원화 중심","target":"locale/currency/timezone 정책과 반올림 테스트","root_cause":"시장 범위 미결정","owner":"제품/데이터","depends_on":["GAP-001"]},
+    {"id":"GAP-012","field":"FIELD-20","title":"저장 검색·동의 수명주기","severity":"P1","current":"계정·내보내기·삭제 가능","target":"저장 검색·알림 동의·보존기간·철회","root_cause":"기능 범위 미구현","owner":"계정/백엔드","depends_on":[]},
+    {"id":"GAP-013","field":"FIELD-23","title":"운영 지원·사고 복구","severity":"P1","current":"상태·오류 표시는 있으나 운영 핸드오프 미정","target":"SLO, 온콜, 공급자 장애 배너, 재처리 큐","root_cause":"운영 책임자·연락처 부재","owner":"운영","depends_on":["GAP-009"]},
+    {"id":"GAP-014","field":"FIELD-16","title":"Android 실기기 검증","severity":"P2","current":"ADB 장치 미확인","target":"유휴 Android 1대에서 QR/PWA/오프라인 회귀 증거","root_cause":"연결된 유휴 기기 확인 대기","owner":"QA","depends_on":[]}
+  ],
+  "counts":{"total":14,"p0":6,"p1":7,"p2":1},
+  "unknowns":["공급자별 계약 가격·쿼터","제휴 정산률","지도·리뷰 라이선스","Android 장치 상태"]
+}

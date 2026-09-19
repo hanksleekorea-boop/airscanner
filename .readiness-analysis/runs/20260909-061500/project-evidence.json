@@ -1,0 +1,19 @@
+{
+  "schema":"crh-project-evidence/v1",
+  "project":"HotelScanner",
+  "assessedAt":"2026-09-09",
+  "scope":"all",
+  "platforms":["web","responsive-mobile-web","pwa","cloudflare-worker","cloudflare-d1"],
+  "evidence":[
+    {"id":"PUB-001","kind":"public_url","url":"https://hotelscanner.scanners.cc/","observedAt":"2026-09-09","status":"observed_200","note":"공개 홈; 표본 검색 UI"},
+    {"id":"PUB-002","kind":"dashboard","url":"https://hotelscanner.scanners.cc/dashboard/","observedAt":"2026-09-09","status":"observed_200","note":"공개 검증 현황판"},
+    {"id":"PUB-003","kind":"health","url":"https://hotelscanner.scanners.cc/health","observedAt":"2026-09-09","status":"edge_ready","note":"SAMPLE_ONLY; live providers waiting"},
+    {"id":"PUB-004","kind":"search_api","url":"https://hotelscanner.scanners.cc/api/hotels/search","observedAt":"2026-09-09","status":"sample_only_200","note":"providerCount=0; 외부 판매처 없음"},
+    {"id":"OWN-001","kind":"verification","url":"https://hotelscanner.scanners.cc/verification.json","observedAt":"2026-09-09","status":"cloudflare_scope_ready","note":"OAuth/D1/PWA/보안 범위 증거"},
+    {"id":"OWN-002","kind":"historical_test","url":"D:/Desktop/챗지피티프로젝트들/에어스캐너/10_STATE/STATE.md","observedAt":"2026-09-09","status":"internal_record","note":"제품 테스트·edge·OAuth 기록"},
+    {"id":"OWN-003","kind":"qr_asset","url":"D:/Desktop/챗지피티프로젝트들/에어스캐너/60_OUTPUTS/HOTELSCANNER_PUBLIC_QR.svg","observedAt":"2026-09-09","status":"file_present","note":"공개 URL QR"},
+    {"id":"OWN-004","kind":"android","observedAt":"2026-09-09","status":"not_observed","note":"adb devices -l에서 유휴 Android 확인 안 됨"}
+  ],
+  "unknowns":["실시간 공급자·요금·예약","클릭아웃·제휴 수익","법률·광고 승인","Android 실기기","운영 SLO·온콜"],
+  "na":["직접 결제/예약: 사용자 범위 제외","Apple 로그인: 사용자 범위 제외"]
+}

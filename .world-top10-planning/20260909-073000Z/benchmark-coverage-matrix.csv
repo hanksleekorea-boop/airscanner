@@ -1,0 +1,18 @@
+axis,subaxis,status,atomic_count,reason
+surface,search,ASSESSED,4,공개 검색 확인
+surface,results,ASSESSED,4,필터·정렬 확인
+surface,detail,ASSESSED,4,총액·조건 확인
+surface,compare,ASSESSED,3,비교함 확인
+surface,account,ASSESSED,4,OAuth·D1·삭제 확인
+user,new,PARTIAL,2,실사용자 미확인
+user,returning,PARTIAL,2,재방문 데이터 없음
+task,success,ASSESSED,3,표본 흐름 확인
+task,failure,ASSESSED,5,상태·fail-closed 확인
+task,recovery,PARTIAL,3,운영 복구 미실행
+platform,mobile,PARTIAL,3,실기기 없음
+platform,pc,ASSESSED,3,반응형 공개판
+platform,keyboard,PARTIAL,2,자동 증거만 있음
+data,stale,PARTIAL,2,라이브 데이터 없음
+security,privacy,ASSESSED,4,삭제·Origin·헤더
+business,affiliate,BLOCKED_WITH_EVIDENCE,0,계약 없음
+business,ads,BLOCKED_WITH_EVIDENCE,0,승인 없음

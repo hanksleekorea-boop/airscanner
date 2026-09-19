@@ -1,0 +1,11 @@
+{
+  "schema_version":"best-practice-synthesis.v1","run_id":"20260909-054409Z","generated_at_utc":"2026-09-09T05:44:09Z","project_fingerprint":"hotelscanner.scanners.cc|h1-h2-h3-internal-oauth-d1-wesaver-cloudflare-only-v3","artifact_type":"best-practice-synthesis","source_artifact_ids":["source-register.md","benchmark-matrix.json"],
+  "records":[
+    {"id":"BP-01","pattern":"가격 비교 + 총액 투명성","sources":["SRC-0001","SRC-0002","SRC-0004","SRC-0008"],"adoption":"P0","acceptance":"세금·수수료·통화·수집시각이 카드와 상세에 일치"},
+    {"id":"BP-02","pattern":"다수 판매처와 클릭아웃","sources":["SRC-0002","SRC-0003","SRC-0006","SRC-0007"],"adoption":"P0","acceptance":"판매처별 CTA와 실패 복귀가 추적 가능"},
+    {"id":"BP-03","pattern":"리뷰·신뢰 신호","sources":["SRC-0007","SRC-0009"],"adoption":"P1","acceptance":"출처·수집시각·리뷰 수·신고 경로 표시"},
+    {"id":"BP-04","pattern":"회원가·취소·지원","sources":["SRC-0009","SRC-0010","SRC-0011"],"adoption":"P1","acceptance":"조건 원문 링크·회원 조건·지원 경로 표시"},
+    {"id":"BP-05","pattern":"모바일/지역화","sources":["SRC-0005","SRC-0008"],"adoption":"P1","acceptance":"모바일 고정 요약, locale/currency 및 저대역폭 재시도"}
+  ],
+  "counts":{"patterns":5},"unknowns":["각 서비스의 내부 랭킹 알고리즘","실제 전환율"]
+}
