@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "project": "에어스캐너",
+    "timestamp": "2026-09-19T15:16:15.022Z",
+    "version": "v3.4"
+  },
+  "engine_A_general": {
+    "domain_match": [
+      "글로벌 에어 스캐너",
+      "SaaS",
+      "Aggregator"
+    ],
+    "target_audience": "Global Users, Professionals",
+    "key_features": [
+      "항공사 직통 스캔",
+      "수수료 제로",
+      "실시간 잔여 좌석"
+    ]
+  },
+  "engine_B_commercial": {
+    "auth": "Google Login, GitHub OAuth, Email/PW",
+    "pwa": "Manifest, Service Worker, Offline Support",
+    "premium": "Freemium Tier setup"
+  },
+  "engine_C_collaboration": {
+    "shared_storage": "Cloud Sync, Local First",
+    "concurrent_editing": "CRDT, WebSocket sync",
+    "conflict_resolution": "Last-write-wins + manual merge"
+  }
+}
